@@ -5,4 +5,13 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/Yu-Jeong55.github.io/",
+  resolve: {
+    alias: [
+      { find: "assets", replacement: "/src/assets" },
+      { find: "components", replacement: "/src/components" },
+      { find: "pages", replacement: "/src/pages" },
+      { find: "router", replacement: "/src/router" },
+      { find: "styles", replacement: "/src/styles" },
+    ],
+  },
 });
