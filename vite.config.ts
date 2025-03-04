@@ -4,7 +4,10 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/Yu-Jeong55.github.io/",
+  base: "/",
+  build: {
+    outDir: "dist",
+  },
   resolve: {
     alias: [
       { find: "assets", replacement: "/src/assets" },

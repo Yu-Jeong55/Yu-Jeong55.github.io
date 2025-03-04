@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FONT } from "styles/Palette";
+import { FONT, PALETTE } from "styles/Palette";
 
 export const IntroContainer = styled.div`
   height: 100vh;
@@ -32,6 +32,7 @@ export const ScrollIndicator = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  color: ${PALETTE.MAIN.LIGHT_GRAY};
 
   svg {
     width: 30px;
