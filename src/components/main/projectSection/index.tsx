@@ -1,13 +1,12 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import * as S from "./style";
-import { forwardRef } from "react";
 import { Navigation } from "swiper/modules";
 import { Swiper } from "swiper/react";
 import { RiArrowRightWideFill, RiArrowLeftWideFill } from "react-icons/ri";
 import { SlArrowRight } from "react-icons/sl";
 
-const ProjectSection = forwardRef<HTMLElement[]>((_, ref) => {
+function ProjectSection() {
   const projects = [
     {
       title: "Pro.log",
@@ -103,8 +102,6 @@ const ProjectSection = forwardRef<HTMLElement[]>((_, ref) => {
       </S.SliderContainer>
     </S.ProjectContainer>
   );
-});
-
-ProjectSection.displayName = "ProjectSection";
+}
 
 export default ProjectSection;

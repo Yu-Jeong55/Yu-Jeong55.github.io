@@ -1,5 +1,4 @@
 import * as S from "./style";
-import { forwardRef } from "react";
 import {
   SiJavascript,
   SiTypescript,
@@ -16,7 +15,7 @@ import {
   SiReactquery,
 } from "react-icons/si";
 
-const SkillsSection = forwardRef<HTMLElement[]>((_, ref) => {
+function SkillsSection() {
   const skills = {
     languages: [
       { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E" },
@@ -86,8 +85,6 @@ const SkillsSection = forwardRef<HTMLElement[]>((_, ref) => {
       </S.SkillCategory>
     </S.SkillsContainer>
   );
-});
-
-SkillsSection.displayName = "SkillsSection";
+}
 
 export default SkillsSection;

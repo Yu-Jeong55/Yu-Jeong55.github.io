@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FONT, PALETTE } from "styles/Palette";
+import { FONT } from "styles/Palette";
 
 export const IntroContainer = styled.section`
   width: 100%;

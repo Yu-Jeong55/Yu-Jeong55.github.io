@@ -1,8 +1,6 @@
 import * as S from "./style";
-import { forwardRef } from "react";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
-const AboutSection = forwardRef<HTMLElement[]>((_, ref) => {
+function AboutSection() {
   return (
     <S.AboutContainer>
       <S.AboutTitle>
@@ -31,8 +29,6 @@ const AboutSection = forwardRef<HTMLElement[]>((_, ref) => {
       </S.AboutDescription>
     </S.AboutContainer>
   );
-});
-
-AboutSection.displayName = "AboutSection";
+}
 
 export default AboutSection;
