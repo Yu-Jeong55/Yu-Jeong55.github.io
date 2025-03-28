@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { FONT, PALETTE } from "styles/Palette";
 
 export const Nav = styled.nav`
@@ -37,7 +37,7 @@ export const NavList = styled.ul`
   width: 100%;
 `;
 
-export const NavItem = styled.li`
+export const NavItem = styled.li<{ $isActive: boolean }>`
   font-size: 20px;
   font-weight: ${FONT.WEIGHT.BASIC};
   cursor: pointer;
@@ -48,7 +48,13 @@ export const NavItem = styled.li`
   align-items: center;
   justify-content: center;
   color: ${PALETTE.MAIN.GRAY};
-
+  ${({ $isActive }) =>
+    $isActive &&
+    css`
+      color: ${PALETTE.MAIN.POINT};
+      font-weight: bold;
+      // ... active 상태일 때 적용할 다른 스타일들 ...
+    `}
   &:hover {
     color: ${PALETTE.MAIN.POINT};
   }

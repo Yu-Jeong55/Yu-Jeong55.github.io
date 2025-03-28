@@ -17,4 +17,7 @@ export default defineConfig({
       { find: "styles", replacement: "/src/styles" },
     ],
   },
+  server: {
+    port: 3000,
+  },
 });

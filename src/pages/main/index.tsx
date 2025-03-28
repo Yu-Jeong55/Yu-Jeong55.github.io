@@ -5,7 +5,7 @@ import ProjectsSection from "components/main/projectSection";
 import SkillsSection from "components/main/skillsSection";
 import { useEffect } from "react";
 
-const MainPage: React.FC = () => {
+function MainPage({ ref }: { ref: React.RefObject<HTMLElement[]> }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -13,11 +13,13 @@ const MainPage: React.FC = () => {
   return (
     <S.MainContainer>
       <IntroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
+      <S.InfoContainer>
+        <AboutSection ref={ref} />
+        <SkillsSection ref={ref} />
+        <ProjectsSection ref={ref} />
+      </S.InfoContainer>
     </S.MainContainer>
   );
-};
+}
 
 export default MainPage;

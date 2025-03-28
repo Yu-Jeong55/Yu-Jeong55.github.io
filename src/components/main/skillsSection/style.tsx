@@ -1,68 +1,88 @@
 import styled from "styled-components";
 import { FONT, PALETTE } from "styles/Palette";
 
-export const SkillsContainer = styled.div`
-  width: 70%;
+export const SkillsContainer = styled.section`
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  padding-top: var(--top);
-  margin-bottom: var(--bottom);
+  align-items: center;
+  padding-top: 280px;
+  padding-bottom: 280px;
+  background-color: #ffffff;
+  clip-path: polygon(0 16%, 100% 0, 100% 84%, 0 100%);
 `;
 
 export const SkillsTitle = styled.h2`
   text-align: center;
-  margin-bottom: 2rem;
   font-size: ${FONT.SIZE.TITLE};
-  font-weight: ${FONT.WEIGHT.BOLD};
-  color: ${PALETTE.MAIN.LIGHT_GRAY};
+  margin-bottom: 56px;
+  font-family: "gotham-black";
+
+  span {
+    font-family: "gotham-black";
+  }
 `;
 
 export const SkillCategory = styled.div`
+  width: 65%;
   display: flex;
-  gap: 50px;
-  border: 1px solid ${PALETTE.MAIN.GRAY};
-  border-radius: 10px;
-  padding: 30px 40px;
+  gap: 6px;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.03);
+  margin-bottom: 25px;
+  height: 104px;
+
+  @media (max-width: 1470px) {
+    height: 160px;
+  }
 `;
 
-export const CategoryTitle = styled.h3`
-  font-size: ${FONT.SIZE.SUB_TITLE};
-  color: ${PALETTE.MAIN.GRAY};
-  width: 180px;
-  text-align: center;
+export const CategoryTitle = styled.div`
+  flex-shrink: 1;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "gotham-bold";
+  font-size: ${FONT.SIZE.LARGE};
+  color: #ffffff;
+  background-color: ${PALETTE.MAIN.POINT};
 `;
 
 export const SkillsList = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 12px;
   align-items: center;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  background-color: ${PALETTE.MAIN.LIGHT_GRAY};
 `;
 
 export const SkillItem = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 16px 18px;
+  padding: 12px 14px;
   width: fit-content;
   color: white;
-  border-radius: 5px;
-  border: 1px solid ${PALETTE.MAIN.GRAY};
-  background-color: rgba(0, 0, 0, 0.5);
+  font-size: ${FONT.SIZE.SMALL};
+  font-weight: ${FONT.WEIGHT.BOLD};
+  color: ${PALETTE.MAIN.BLACK};
+  border: 1px solid ${PALETTE.MAIN.BLACK};
 
   svg {
     width: 20px;
     height: 20px;
-    color: ${PALETTE.MAIN.POINT};
+    color: ${PALETTE.MAIN.BLACK};
   }
 `;
 
 export const Divider = styled.div`
   width: 2px;
-  height: 30px;
+  height: 100%;
   background-color: ${PALETTE.MAIN.GRAY};
   align-self: center;
 `;

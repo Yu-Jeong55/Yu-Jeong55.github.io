@@ -1,4 +1,5 @@
 import * as S from "./style";
+import { forwardRef } from "react";
 import {
   SiJavascript,
   SiTypescript,
@@ -15,7 +16,7 @@ import {
   SiReactquery,
 } from "react-icons/si";
 
-export default function SkillsSection() {
+const SkillsSection = forwardRef<HTMLElement[]>((_, ref) => {
   const skills = {
     languages: [
       { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E" },
@@ -44,11 +45,12 @@ export default function SkillsSection() {
   };
 
   return (
-    <S.SkillsContainer id="skills">
-      <S.SkillsTitle>Skills</S.SkillsTitle>
+    <S.SkillsContainer>
+      <S.SkillsTitle>
+        <span className="point">S</span>KILLS
+      </S.SkillsTitle>
       <S.SkillCategory>
         <S.CategoryTitle>LANGUAGE</S.CategoryTitle>
-        <S.Divider />
         <S.SkillsList>
           {skills.languages.map((skill) => (
             <S.SkillItem key={skill.name}>
@@ -61,7 +63,6 @@ export default function SkillsSection() {
 
       <S.SkillCategory>
         <S.CategoryTitle>FRONTEND</S.CategoryTitle>
-        <S.Divider />
         <S.SkillsList>
           {skills.frontend.map((skill) => (
             <S.SkillItem key={skill.name}>
@@ -74,7 +75,6 @@ export default function SkillsSection() {
 
       <S.SkillCategory>
         <S.CategoryTitle>TOOLS</S.CategoryTitle>
-        <S.Divider />
         <S.SkillsList>
           {skills.tools.map((skill) => (
             <S.SkillItem key={skill.name}>
@@ -86,4 +86,8 @@ export default function SkillsSection() {
       </S.SkillCategory>
     </S.SkillsContainer>
   );
-}
+});
+
+SkillsSection.displayName = "SkillsSection";
+
+export default SkillsSection;
