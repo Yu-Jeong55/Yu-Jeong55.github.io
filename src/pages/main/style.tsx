@@ -21,7 +21,7 @@ export const InfoContainer = styled.div`
   align-items: center;
   width: 100%;
   z-index: 5;
-  background-color: ${PALETTE.MAIN.LIGHT_GRAY};
+  background-color: #f9f7f7;
   padding-top: 160px;
   padding-bottom: 300px;
 

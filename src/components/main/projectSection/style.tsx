@@ -7,7 +7,7 @@ export const ProjectContainer = styled.section`
   height: auto;
   position: relative;
   padding-top: var(--top);
-  padding-bottom: 550px;
+  padding-bottom: 350px;
   clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
 `;
 
@@ -16,7 +16,7 @@ export const BlackBackground = styled.div`
   height: 800px;
   background-image: url("/images/laptop.jpg");
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 0;
   transform: translateY(-50%);
   z-index: 1;
