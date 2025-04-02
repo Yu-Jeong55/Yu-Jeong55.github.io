@@ -1,14 +1,14 @@
 import * as S from "./style";
-import { useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
+
+import TodayDetail from "../projects/today";
+import PrologDetail from "../projects/prolog";
+import NewstarDetail from "../projects/newstar";
 import IntroSection from "components/main/introSection";
 import AboutSection from "components/main/aboutSection";
 import SkillsSection from "components/main/skillsSection";
 import ContactSection from "components/main/contactSection";
 import ProjectsSection from "components/main/projectSection";
-import PrologDetail from "../projects/prolog";
-import TodayDetail from "../projects/today";
-import NewstarDetail from "../projects/newstar";
 
 function MainPage() {
   const navigate = useNavigate();
