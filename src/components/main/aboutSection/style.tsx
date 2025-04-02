@@ -6,6 +6,7 @@ export const AboutContainer = styled.section`
   flex-direction: column;
   align-items: center;
   width: 60%;
+  padding-top: 60px;
   margin-bottom: var(--bottom);
 `;
 

@@ -6,7 +6,7 @@ export const SkillsContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 280px;
+  padding-top: var(--top);
   padding-bottom: 280px;
   background-color: #ffffff;
   clip-path: polygon(0 16%, 100% 0, 100% 84%, 0 100%);

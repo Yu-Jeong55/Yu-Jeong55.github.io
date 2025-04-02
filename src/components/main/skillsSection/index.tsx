@@ -1,4 +1,7 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import * as S from "./style";
+import { useEffect } from "react";
 import {
   SiJavascript,
   SiTypescript,
@@ -16,6 +19,12 @@ import {
 } from "react-icons/si";
 
 function SkillsSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  });
+
   const skills = {
     languages: [
       { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E" },
@@ -45,10 +54,10 @@ function SkillsSection() {
 
   return (
     <S.SkillsContainer>
-      <S.SkillsTitle>
+      <S.SkillsTitle data-aos="fade-down">
         <span className="point">S</span>KILLS
       </S.SkillsTitle>
-      <S.SkillCategory>
+      <S.SkillCategory data-aos="fade-down" data-aos-delay="300">
         <S.CategoryTitle>LANGUAGE</S.CategoryTitle>
         <S.SkillsList>
           {skills.languages.map((skill) => (
@@ -60,7 +69,7 @@ function SkillsSection() {
         </S.SkillsList>
       </S.SkillCategory>
 
-      <S.SkillCategory>
+      <S.SkillCategory data-aos="fade-down" data-aos-delay="400">
         <S.CategoryTitle>FRONTEND</S.CategoryTitle>
         <S.SkillsList>
           {skills.frontend.map((skill) => (
@@ -72,7 +81,7 @@ function SkillsSection() {
         </S.SkillsList>
       </S.SkillCategory>
 
-      <S.SkillCategory>
+      <S.SkillCategory data-aos="fade-down" data-aos-delay="500">
         <S.CategoryTitle>TOOLS</S.CategoryTitle>
         <S.SkillsList>
           {skills.tools.map((skill) => (

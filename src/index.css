@@ -8,12 +8,12 @@
 }
 
 *::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
 }
 
 :root {
   --bottom: 120px;
-  --top: 60px;
+  --top: 280px;
 }
 
 body {
