@@ -6,7 +6,6 @@ import "swiper/css/navigation";
 import { useEffect, useState } from "react";
 
 import ProjectSlide from "./projectSlide";
-import ProjectModal from "components/modal/projectModal";
 
 interface ProjectType {
   title: string;
@@ -25,7 +24,7 @@ function ProjectSection() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      offset: 20,
+      offset: 20
     });
   }, []);
 

@@ -72,6 +72,7 @@ export const ProjectLink = styled.a`
   font-size: ${FONT.SIZE.SMALL};
   border: 1px solid ${PALETTE.MAIN.DARK_GRAY};
   transition: all 0.3s ease;
+  cursor: pointer;
 
   &:hover {
     color: #ffffff;

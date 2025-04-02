@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import * as S from "./style";
 import { SlArrowRight } from "react-icons/sl";
 
@@ -9,12 +10,13 @@ interface ProjectType {
   link: string;
 }
 
-interface ProjectCardProps {
-  project: ProjectType;
-  onProjectClick: () => void;
-}
+function ProjectCard({ project }: { project: ProjectType }) {
+  const navigate = useNavigate();
 
-function ProjectCard({ project, onProjectClick }: ProjectCardProps) {
+  const handleDetailClick = () => {
+    navigate(`?p_name=${project.title}`);
+  };
+
   return (
     <S.ProjectCard data-aos="flip-left" data-aos-delay="200">
       <S.ProjectImage src={project.image} alt={project.title} />
@@ -24,7 +26,7 @@ function ProjectCard({ project, onProjectClick }: ProjectCardProps) {
         </S.ProjectLogo>
         <S.ProjectDescription>{project.description}</S.ProjectDescription>
         <S.ProjectLinks>
-          <S.ProjectLink onClick={onProjectClick} style={{ cursor: "pointer" }}>
+          <S.ProjectLink onClick={handleDetailClick}>
             DETAIL
             <SlArrowRight size={10} />
           </S.ProjectLink>

@@ -15,13 +15,13 @@ import {
   SiNotion,
   SiGitlab,
   SiFigma,
-  SiReactquery,
+  SiReactquery
 } from "react-icons/si";
 
 function SkillsSection() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1000
     });
   });
 
@@ -31,7 +31,7 @@ function SkillsSection() {
       { name: "TypeScript", icon: <SiTypescript />, color: "#3178C6" },
       { name: "Python", icon: <SiPython />, color: "#3776AB" },
       { name: "HTML5", icon: <SiHtml5 />, color: "#E34F26" },
-      { name: "CSS3", icon: <SiCss3 />, color: "#1572B6" },
+      { name: "CSS3", icon: <SiCss3 />, color: "#1572B6" }
     ],
     frontend: [
       { name: "React", icon: <SiReact />, color: "#61DAFB" },
@@ -40,16 +40,16 @@ function SkillsSection() {
       {
         name: "Styled Components",
         icon: <SiStyledcomponents />,
-        color: "#DB7093",
-      },
+        color: "#DB7093"
+      }
     ],
     tools: [
       { name: "Jira", icon: <SiJira />, color: "#0052CC" },
       { name: "Notion", icon: <SiNotion />, color: "#ffffff" },
       { name: "GitHub", icon: <SiGithub />, color: "#181717" },
       { name: "GitLab", icon: <SiGitlab />, color: "#FCA121" },
-      { name: "Figma", icon: <SiFigma />, color: "#F24E1E" },
-    ],
+      { name: "Figma", icon: <SiFigma />, color: "#F24E1E" }
+    ]
   };
 
   return (
@@ -57,7 +57,7 @@ function SkillsSection() {
       <S.SkillsTitle data-aos="fade-down">
         <span className="point">S</span>KILLS
       </S.SkillsTitle>
-      <S.SkillCategory data-aos="fade-down" data-aos-delay="300">
+      <S.SkillCategory data-aos="fade-down" data-aos-delay="100">
         <S.CategoryTitle>LANGUAGE</S.CategoryTitle>
         <S.SkillsList>
           {skills.languages.map((skill) => (
@@ -69,7 +69,7 @@ function SkillsSection() {
         </S.SkillsList>
       </S.SkillCategory>
 
-      <S.SkillCategory data-aos="fade-down" data-aos-delay="400">
+      <S.SkillCategory data-aos="fade-down" data-aos-delay="200">
         <S.CategoryTitle>FRONTEND</S.CategoryTitle>
         <S.SkillsList>
           {skills.frontend.map((skill) => (
@@ -81,7 +81,7 @@ function SkillsSection() {
         </S.SkillsList>
       </S.SkillCategory>
 
-      <S.SkillCategory data-aos="fade-down" data-aos-delay="500">
+      <S.SkillCategory data-aos="fade-down" data-aos-delay="300">
         <S.CategoryTitle>TOOLS</S.CategoryTitle>
         <S.SkillsList>
           {skills.tools.map((skill) => (
