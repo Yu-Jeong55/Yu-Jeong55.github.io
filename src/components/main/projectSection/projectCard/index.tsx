@@ -7,6 +7,7 @@ interface ProjectType {
   logo: string;
   description: string;
   image: string;
+  github: string;
   link: string;
 }
 
@@ -26,12 +27,13 @@ function ProjectCard({ project }: { project: ProjectType }) {
         </S.ProjectLogo>
         <S.ProjectDescription>{project.description}</S.ProjectDescription>
         <S.ProjectLinks>
-          <S.ProjectLink onClick={handleDetailClick}>
+          <S.ProjectLink $isLink={true} onClick={handleDetailClick}>
             DETAIL
             <SlArrowRight size={10} />
           </S.ProjectLink>
           <S.ProjectLink
-            href={project.link}
+            $isLink={true}
+            href={project.github}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -39,9 +41,10 @@ function ProjectCard({ project }: { project: ProjectType }) {
             <SlArrowRight size={10} />
           </S.ProjectLink>
           <S.ProjectLink
-            // href={project.link}
+            href={project.link}
             target="_blank"
             rel="noopener noreferrer"
+            $isLink={project.link === "" ? false : true}
           >
             WEBSITE
             <SlArrowRight size={10} />

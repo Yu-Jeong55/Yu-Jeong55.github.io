@@ -12,6 +12,12 @@ export const SkillsContainer = styled.section`
   clip-path: polygon(0 16%, 100% 0, 100% 84%, 0 100%);
 `;
 
+export const SkillsWrapper = styled.div`
+  display: flex;
+  gap: 12px;
+  width: 60%;
+`;
+
 export const SkillsTitle = styled.h2`
   text-align: center;
   font-size: ${FONT.SIZE.TITLE};
@@ -24,22 +30,15 @@ export const SkillsTitle = styled.h2`
 `;
 
 export const SkillCategory = styled.div`
-  width: 65%;
   display: flex;
-  gap: 6px;
-  align-items: center;
+  flex-direction: column;
+  width: calc((100% - 40px) / 3);
+  gap: 12px;
   margin-bottom: 25px;
-  height: 104px;
-
-  @media (max-width: 1470px) {
-    height: 160px;
-  }
 `;
 
 export const CategoryTitle = styled.div`
-  flex-shrink: 1;
-  width: 300px;
-  height: 100%;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,36 +46,71 @@ export const CategoryTitle = styled.div`
   font-family: "gotham-bold";
   font-size: ${FONT.SIZE.LARGE};
   color: #ffffff;
-  background-color: ${PALETTE.MAIN.POINT};
+  background-color: ${PALETTE.MAIN.BLACK};
 `;
 
 export const SkillsList = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 12px;
-  align-items: center;
-  padding: 30px;
   height: 100%;
   width: 100%;
-  background-color: ${PALETTE.MAIN.LIGHT_GRAY};
 `;
 
 export const SkillItem = styled.div`
   display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 14px;
-  width: fit-content;
-  color: white;
-  font-size: ${FONT.SIZE.SMALL};
-  font-weight: ${FONT.WEIGHT.BOLD};
-  color: ${PALETTE.MAIN.BLACK};
-  border: 1px solid ${PALETTE.MAIN.BLACK};
+  flex-direction: column;
+  background-color: ${PALETTE.MAIN.LIGHT_GRAY};
+
+  cursor: pointer;
 
   svg {
     width: 20px;
     height: 20px;
-    color: ${PALETTE.MAIN.BLACK};
+    color: #ffffff;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+    padding: 12px 14px;
+    transition: all 0.3s ease;
+    font-weight: ${FONT.WEIGHT.BOLD};
+    background-color: ${PALETTE.MAIN.POINT};
+    color: #ffffff;
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 25px;
+    padding-right: 12px;
+    padding-bottom: 16px;
+    background-color: ${PALETTE.MAIN.LIGHT_GRAY};
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: all 0.6s ease-out;
+
+    &.active {
+      max-height: 500px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      opacity: 1;
+    }
+
+    li {
+      font-family: "Noto Sans KR", sans-serif;
+    }
   }
 `;
 

@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/",
   build: {
-    outDir: "dist",
+    outDir: "dist"
   },
   resolve: {
     alias: [
@@ -15,9 +15,10 @@ export default defineConfig({
       { find: "pages", replacement: "/src/pages" },
       { find: "router", replacement: "/src/router" },
       { find: "styles", replacement: "/src/styles" },
-    ],
+      { find: "data", replacement: "/src/data" }
+    ]
   },
   server: {
-    port: 3000,
-  },
+    port: 3000
+  }
 });

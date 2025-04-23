@@ -50,7 +50,7 @@ export const ProjectLogo = styled.div`
 `;
 
 export const ProjectDescription = styled.p`
-  font-size: ${FONT.SIZE.SMALL};
+  font-size: ${FONT.SIZE.BASIC};
   margin-bottom: 1.5rem;
   line-height: 1.6;
   flex: 1;
@@ -62,8 +62,9 @@ export const ProjectLinks = styled.div`
   margin-top: auto;
 `;
 
-export const ProjectLink = styled.a`
+export const ProjectLink = styled.a<{ $isLink: boolean }>`
   display: flex;
+  visibility: ${({ $isLink }) => ($isLink ? "inherit" : "hidden")};
   justify-content: space-between;
   align-items: center;
   width: calc(100% / 3 - 6px);

@@ -11,7 +11,8 @@
       "components/*": ["src/components/*"],
       "pages/*": ["src/pages/*"],
       "router/*": ["src/router/*"],
-      "styles/*": ["src/styles/*"]
+      "styles/*": ["src/styles/*"],
+      "data/*": ["src/data/*"]
     }
   }
 }

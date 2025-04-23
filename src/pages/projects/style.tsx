@@ -13,6 +13,13 @@ export const ProjectDetailBackground = styled.div`
 
 export const ProjectDetailContainer = styled.div`
   padding: 60px;
+  h3,
+  p,
+  div,
+  li,
+  span {
+    font-family: "Noto Sans KR", sans-serif;
+  }
   ul {
     list-style-type: circle;
     list-style-position: inside;
@@ -24,8 +31,7 @@ export const Title = styled.div`
   padding: 60px 0;
   text-align: center;
 
-  h2 {
-    font-size: ${FONT.SIZE.LARGE};
+  h1 {
     font-family: GmarketSansMedium;
     color: #ffffff;
     letter-spacing: 2px;

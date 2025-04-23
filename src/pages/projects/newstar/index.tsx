@@ -17,7 +17,7 @@ function NewstarDetail() {
   return (
     <>
       <S.NewstarTitle>
-        <h2>사용자 맞춤형 뉴스 숏폼 플랫폼 Newstar</h2>
+        <h1>사용자 맞춤형 뉴스 숏폼 플랫폼 Newstar</h1>
       </S.NewstarTitle>
       <S.ProjectDetailContainer>
         <S.SubTitle>프로젝트 소개</S.SubTitle>

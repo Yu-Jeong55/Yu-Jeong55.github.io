@@ -17,7 +17,7 @@ function TodayDetail() {
   return (
     <>
       <S.TodayTitle>
-        <h2>당신만의 그림일기 '당일'</h2>
+        <h1>당신만의 그림일기 '당일'</h1>
       </S.TodayTitle>
       <S.ProjectDetailContainer>
         <S.SubTitle>프로젝트 소개</S.SubTitle>

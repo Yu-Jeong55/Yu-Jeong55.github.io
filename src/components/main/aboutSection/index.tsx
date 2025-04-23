@@ -19,6 +19,14 @@ function AboutSection() {
       <S.AboutGreet data-aos="fade-down" data-aos-delay="100">
         WEB FRONTEND DEVELOPER
       </S.AboutGreet>
+      <S.AboutThank data-aos="fade-down" data-aos-delay="100">
+        안녕하세요! 프론트엔드 개발자 김유정입니다.
+      </S.AboutThank>
+      <S.AboutThank data-aos="fade-down" data-aos-delay="100">
+        제 사이트에 방문해주셔서 감사합니다.
+      </S.AboutThank>
+      <br />
+      <br />
       <S.AboutImage data-aos="zoom-in" data-aos-delay="200">
         <img src="/images/my_photo.jpg" alt="profile_photo" />
       </S.AboutImage>

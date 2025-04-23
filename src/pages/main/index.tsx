@@ -23,6 +23,17 @@ function MainPage() {
   const getProjectLink = () => {
     switch (projectName?.toLowerCase()) {
       case "pro.log":
+        return "https://yu-jeong55.github.io/d_prolog";
+      case "뉴스타":
+        return "https://yu-jeong55.github.io/d_newstar";
+      default:
+        return "";
+    }
+  };
+
+  const getProjectGithubLink = () => {
+    switch (projectName?.toLowerCase()) {
+      case "pro.log":
         return "https://github.com/Yu-Jeong55/Prolog";
       case "당일":
         return "https://github.com/Yu-Jeong55/today";
@@ -46,6 +57,8 @@ function MainPage() {
     }
   };
 
+  const projectLink = getProjectLink();
+
   return (
     <S.MainContainer>
       <IntroSection />
@@ -65,19 +78,17 @@ function MainPage() {
               <S.ButtonWrapper>
                 <S.CloseButton onClick={handleCloseModal} />
                 <a
-                  href={getProjectLink()}
+                  href={getProjectGithubLink()}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel={projectName}
                 >
                   <S.GithubLink />
                 </a>
-                <a
-                  href={getProjectLink()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <S.GoPageLink />
-                </a>
+                {projectLink && (
+                  <a href={projectLink} target="_blank" rel={projectName}>
+                    <S.GoPageLink />
+                  </a>
+                )}
               </S.ButtonWrapper>
             </S.ModalAndButtons>
           </S.ModalOverlay>

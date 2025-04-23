@@ -38,7 +38,6 @@ export const AboutImage = styled.div`
 export const AboutInfo = styled.div`
   text-align: center;
   font-size: ${FONT.SIZE.BASIC};
-  margin-bottom: 14px;
 `;
 
 export const AboutGreet = styled(AboutInfo)`
@@ -46,6 +45,12 @@ export const AboutGreet = styled(AboutInfo)`
   margin-bottom: 30px;
   font-size: ${FONT.SIZE.BASIC};
   color: ${PALETTE.MAIN.DARK_GRAY};
+  letter-spacing: 1.2px;
+`;
+
+export const AboutThank = styled(AboutInfo)`
+  font-size: ${FONT.SIZE.BASIC};
+  color: ${PALETTE.MAIN.GRAY};
   letter-spacing: 1.2px;
 `;
 
