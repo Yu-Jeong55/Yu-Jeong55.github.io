@@ -145,6 +145,14 @@ export const FigmaImgWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+`;
+
+export const SurveyImg = styled.img`
+  height: 200px;
+  width: fit-content;
+  object-fit: contain;
 `;
 
 export const Image = styled.img`

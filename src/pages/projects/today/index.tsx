@@ -193,6 +193,11 @@ function TodayDetail() {
             <li>
               하루종일 돌아다니며 총 43명의 설문조사를 모을 수 있었고, 이를
               바탕으로 기획을 수정하고 사용자 서비스를 개선할 수 있었습니다.
+              <S.FigmaImgWrapper>
+                <S.SurveyImg src="images/survey3.png" />
+                <S.SurveyImg src="images/survey1.png" />
+                <S.SurveyImg src="images/survey2.jpg" />
+              </S.FigmaImgWrapper>
             </li>
             <li>원스토어에 앱 서비스를 출시해보는 경험을 했습니다.</li>
           </ul>
