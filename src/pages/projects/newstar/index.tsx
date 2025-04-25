@@ -142,14 +142,6 @@ function NewstarDetail() {
         <S.SubTitle>회고</S.SubTitle>
         <hr />
         <S.ProjectInfo>
-          <h4>아쉬운 점</h4>
-          <ul className="sub-list">
-            <li>
-              변수명, 함수명에 대한 섬세함과 타입 지정 등의 아쉬운 문제로 예상치
-              못한 에러와 팀원들간 코드 공유에 시간을 소요했던 점이
-              아쉬웠습니다.
-            </li>
-          </ul>
           <h4>성과</h4>
           <ul className="sub-list">
             <li>
@@ -175,6 +167,15 @@ function NewstarDetail() {
               만족도 설문조사 진행 후, 피드백을 기반으로 3번의 업데이트 진행했고
               그 결과 삼성 청년 SW 아카데미 특화 프로젝트에서 우수상을 수여하는
               성과로 이어졌습니다.
+            </li>
+          </ul>
+          <h4>아쉬운 점</h4>
+          <ul className="sub-list">
+            <li>
+              변수명, 함수명에 대한 섬세함과 타입 지정 등의 아쉬운 문제로 예상치
+              못한 에러와 팀원들간 코드 공유에 시간을 소요했던 점이
+              아쉬웠습니다. TypeSciprt의 활용 등을 이용해 더 안정적인 코드를
+              작성하고 싶습니다.
             </li>
           </ul>
         </S.ProjectInfo>
