@@ -162,17 +162,6 @@ function PrologDetail() {
         <S.SubTitle>회고</S.SubTitle>
         <hr />
         <S.ProjectInfo>
-          <h4>아쉬운 점</h4>
-          <ul className="sub-list">
-            <li>
-              react를 활용한 첫 프로젝트라 react 라이브러리를 다양하게
-              활용해보지 못한 점이 아쉬웠습니다.
-            </li>
-            <li>
-              또, api 호출 주소, axios의 모듈화, 컴포넌트의 재사용성이 많이
-              떨어지는 점이 아쉬웠습니다.
-            </li>
-          </ul>
           <h4>성과</h4>
           <ul className="sub-list">
             <li>
@@ -191,6 +180,19 @@ function PrologDetail() {
             <li>
               캘린더 라이브러리를 사용하지 않고, JavaScript로 캘린더를 직접
               구현해보면서 JavaScript에 대한 이해도가 향상됨을 느꼈습니다.
+            </li>
+          </ul>
+          <h4>개선하고 싶은 점</h4>
+          <ul className="sub-list">
+            <li>
+              react를 활용한 첫 프로젝트라 react 라이브러리를 다양하게
+              활용해보지 못한 점이 아쉬웠습니다. 라이브러리를 잘 활용해 개발
+              시간을 줄일 수 있으면 좋겠습니다.
+            </li>
+            <li>
+              또, api 호출 주소, axios의 모듈화, 컴포넌트의 재사용성이 많이
+              떨어지는 점이 아쉬웠습니다. api를 호출하는 것에 대한 모듈화로
+              코드의 재사용성과 안정성을 높이고 싶습니다.
             </li>
           </ul>
         </S.ProjectInfo>
