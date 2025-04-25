@@ -76,7 +76,7 @@ export const SkillItem = styled.div`
     justify-content: center;
     width: 100%;
     gap: 12px;
-    padding: 12px 14px;
+    height: 56px;
     transition: all 0.3s ease;
     font-weight: ${FONT.WEIGHT.BOLD};
     background-color: ${PALETTE.MAIN.POINT};
@@ -90,8 +90,8 @@ export const SkillItem = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding-left: 25px;
-    padding-right: 12px;
+    padding-left: 20px;
+    padding-right: 16px;
     padding-bottom: 16px;
     background-color: ${PALETTE.MAIN.LIGHT_GRAY};
     max-height: 0;
@@ -100,6 +100,8 @@ export const SkillItem = styled.div`
     margin: 0;
     overflow: hidden;
     transition: all 0.6s ease-out;
+    list-style-type: circle;
+    list-style-position: inside;
 
     &.active {
       max-height: 500px;

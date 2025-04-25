@@ -17,7 +17,8 @@ export const ProjectDetailContainer = styled.div`
   p,
   div,
   li,
-  span {
+  span,
+  a {
     font-family: "Noto Sans KR", sans-serif;
   }
   ul {
@@ -73,6 +74,30 @@ export const ProjectInfo = styled.ul`
   flex-direction: column;
   gap: 10px;
   margin: 20px 0 40px;
+
+  li {
+    margin-left: 10px;
+  }
+
+  .sub-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 20px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  a {
+    color: ${PALETTE.MAIN.BLACK};
+    text-decoration: underline;
+  }
+
+  h4 {
+    background-color: ${PALETTE.MAIN.LIGHT_GRAY};
+    padding: 6px 16px;
+  }
 `;
 
 export const InfoItem = styled.div`
@@ -114,4 +139,16 @@ export const SkillItem = styled.div`
     height: 20px;
     color: ${PALETTE.MAIN.BLACK};
   }
+`;
+
+export const FigmaImgWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+`;
+
+export const Image = styled.img`
+  height: 350px;
+  width: fit-content;
+  object-fit: contain;
 `;
